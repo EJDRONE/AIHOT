@@ -65,11 +65,11 @@ test("a correction refreshes named content and its topic membership before the i
   assert.equal(retitled?.topic.latest?.title, title, "the page headline");
   assert.equal((await listTopicSummaries()).topics.find((t) => t.slug === "qwen")?.latest?.title, title, "the directory headline");
 
-  await overrideFields(corrected, { fields: { category: "tip" }, version: 1, reason: "实际是教程" }, "test-topics");
+  await overrideFields(corrected, { fields: { category: "industry" }, version: 1, reason: "实际是教程" }, "test-topics");
   const reclassified = await loadTopicPage("qwen", 1);
   assert.equal(reclassified?.items[0]?.id, corrected, "it remains a selected report");
 
-  await overrideFields(corrected, { fields: { tags: ["教程/实践", "entity:kimi"] }, version: 2, reason: "更正主体公司" }, "test-topics");
+  await overrideFields(corrected, { fields: { tags: ["行业资讯", "entity:kimi"] }, version: 2, reason: "更正主体公司" }, "test-topics");
   const moved = await loadTopicPage("qwen", 1);
   assert.deepEqual(moved?.items, [], "the old topic list drops it");
   assert.equal(moved?.topic.latest, null, "the old topic headline drops it");

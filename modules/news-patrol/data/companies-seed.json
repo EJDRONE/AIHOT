@@ -1,0 +1,2069 @@
+{
+ "generatedFrom": "广西固废企业信息_129家_2026-10-27.xlsx",
+ "generatedAt": "2026-10-27",
+ "companies": [
+  {
+   "id": "SS-GX-006",
+   "name": "广西北港新材料有限公司（不锈钢）",
+   "city": "北海市",
+   "county": "铁山港区",
+   "address": "铁山港临海工业园区四号路与七号路附近",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "长短流程结合冶炼废渣",
+   "lon": 109.52,
+   "lat": 21.52,
+   "aliases": [
+    "广西北港新材料有限公司",
+    "北港新材料"
+   ]
+  },
+  {
+   "id": "WM-GX-006",
+   "name": "广西太阳纸业有限公司",
+   "city": "北海市",
+   "county": "铁山港区",
+   "address": "铁山港（临海）工业区",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.57,
+   "lat": 21.6,
+   "aliases": [
+    "广西太阳纸业有限公司",
+    "太阳纸业"
+   ]
+  },
+  {
+   "id": "WM-GX-007",
+   "name": "玖龙纸业（北海）有限公司",
+   "city": "北海市",
+   "county": "铁山港区",
+   "address": "兴港镇港中路99号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.5281,
+   "lat": 21.549,
+   "aliases": [
+    "玖龙纸业有限公司",
+    "玖龙纸业"
+   ]
+  },
+  {
+   "id": "FM-GX-013",
+   "name": "上林南华糖业有限责任公司",
+   "city": "南宁市",
+   "county": "上林县",
+   "address": "白圩镇五里桥",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.732103,
+   "lat": 23.419912,
+   "aliases": [
+    "上林南华糖业有限责任公司",
+    "上林南华糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-002",
+   "name": "南宁糖业宾阳大桥制糖有限责任公司",
+   "city": "南宁市",
+   "county": "宾阳县",
+   "address": "大桥镇南梧街167号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.94307,
+   "lat": 23.197924,
+   "aliases": [
+    "南宁糖业宾阳大桥制糖有限责任公司",
+    "南宁糖业宾阳大桥制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-005",
+   "name": "广西糖业集团廖平制糖有限公司",
+   "city": "南宁市",
+   "county": "宾阳县",
+   "address": "广西宾阳县艾村",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.81034,
+   "lat": 23.217773,
+   "aliases": [
+    "广西糖业集团廖平制糖有限公司",
+    "糖业集团廖平制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-007",
+   "name": "广西糖业集团良圻制糖有限公司",
+   "city": "南宁市",
+   "county": "横州市",
+   "address": "六景镇良圻农场芳香大道666号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.003751,
+   "lat": 22.788393,
+   "aliases": [
+    "广西糖业集团良圻制糖有限公司",
+    "糖业集团良圻制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-008",
+   "name": "横县东糖石塘糖业有限公司",
+   "city": "南宁市",
+   "county": "横州市",
+   "address": "石塘镇横宾路900号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.095834,
+   "lat": 22.896264,
+   "aliases": [
+    "横县东糖石塘糖业有限公司",
+    "横县东糖石塘糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-009",
+   "name": "横州东糖峦城糖业有限公司",
+   "city": "南宁市",
+   "county": "横州市",
+   "address": "峦城镇新城街",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.9197,
+   "lat": 22.799174,
+   "aliases": [
+    "横州东糖峦城糖业有限公司",
+    "横州东糖峦城糖业"
+   ]
+  },
+  {
+   "id": "WM-GX-001",
+   "name": "南宁太阳纸业有限公司",
+   "city": "南宁市",
+   "county": "横州市",
+   "address": "六景工业园区",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "未检索到（项目建设阶段）",
+   "lon": 108.918534,
+   "lat": 22.845637,
+   "aliases": [
+    "南宁太阳纸业有限公司",
+    "南宁太阳纸业"
+   ]
+  },
+  {
+   "id": "WM-GX-003",
+   "name": "横县东糖糖业有限公司纸业分公司",
+   "city": "南宁市",
+   "county": "横州市",
+   "address": "横州镇谢圩",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "未检索到",
+   "lon": 109.1,
+   "lat": 22.896696,
+   "aliases": [
+    "横县东糖糖业有限公司纸业分公司",
+    "横县东糖糖业有限公司纸业分"
+   ]
+  },
+  {
+   "id": "FM-GX-004",
+   "name": "南宁东江制糖有限责任公司",
+   "city": "南宁市",
+   "county": "武鸣区",
+   "address": "府城镇东风社区",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.247042,
+   "lat": 23.321938,
+   "aliases": [
+    "南宁东江制糖有限责任公司",
+    "南宁东江制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-014",
+   "name": "南宁香山制糖有限责任公司",
+   "city": "南宁市",
+   "county": "武鸣区",
+   "address": "武马公路九公里处",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.289935,
+   "lat": 23.169482,
+   "aliases": [
+    "南宁香山制糖有限责任公司",
+    "南宁香山制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-001",
+   "name": "南宁明阳制糖有限责任公司",
+   "city": "南宁市",
+   "county": "江南区",
+   "address": "延安镇平和街东183号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.118967,
+   "lat": 22.442697,
+   "aliases": [
+    "南宁明阳制糖有限责任公司",
+    "南宁明阳制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-010",
+   "name": "南宁良庆东糖糖业有限公司",
+   "city": "南宁市",
+   "county": "良庆区",
+   "address": "大塘镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.383643,
+   "lat": 22.383007,
+   "aliases": [
+    "南宁良庆东糖糖业有限公司",
+    "南宁良庆东糖糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-006",
+   "name": "广西糖业集团金光制糖有限公司",
+   "city": "南宁市",
+   "county": "西乡塘区",
+   "address": "金光农场内",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.978519,
+   "lat": 22.80444,
+   "aliases": [
+    "广西糖业集团金光制糖有限公司",
+    "糖业集团金光制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-012",
+   "name": "广西隆安南华糖业有限责任公司南圩糖厂",
+   "city": "南宁市",
+   "county": "隆安县",
+   "address": "南圩镇新宁街150号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.670491,
+   "lat": 23.127752,
+   "aliases": [
+    "广西隆安南华糖业有限责任公司南圩糖厂",
+    "隆安南华糖业有限责任公司南圩糖厂"
+   ]
+  },
+  {
+   "id": "FM-GX-003",
+   "name": "南宁伶利制糖有限责任公司",
+   "city": "南宁市",
+   "county": "青秀区",
+   "address": "伶俐镇兴伶路8号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.780945,
+   "lat": 22.850294,
+   "aliases": [
+    "南宁伶利制糖有限责任公司",
+    "南宁伶利制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-011",
+   "name": "广西马山惠美糖业有限责任公司",
+   "city": "南宁市",
+   "county": "马山县",
+   "address": "白山镇金伦大道1010号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.173495,
+   "lat": 23.72452,
+   "aliases": [
+    "广西马山惠美糖业有限责任公司",
+    "马山惠美糖业"
+   ]
+  },
+  {
+   "id": "WM-GX-002",
+   "name": "广西和发强纸业有限公司",
+   "city": "南宁市",
+   "county": "马山县",
+   "address": "马山县百龙滩镇工业园区",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "造纸白泥",
+   "lon": 108.14,
+   "lat": 23.83,
+   "aliases": [
+    "广西和发强纸业有限公司",
+    "和发强纸业"
+   ]
+  },
+  {
+   "id": "MN-GX-019",
+   "name": "南方锰业集团有限责任公司大新锰矿分公司",
+   "city": "崇左市",
+   "county": "大新县",
+   "address": "",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "锰渣",
+   "lon": 107.353,
+   "lat": 22.403,
+   "aliases": [
+    "南方锰业集团有限责任公司大新锰矿分公司",
+    "南方锰业集团有限责任公司大新锰矿分"
+   ]
+  },
+  {
+   "id": "SS-GX-009",
+   "name": "广西南国铜业有限责任公司",
+   "city": "崇左市",
+   "county": "扶绥县",
+   "address": "渠黎镇；中国—东盟青年产业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "铜熔炼渣/选矿尾渣（年度实测量未公开）；铜熔炼渣/选矿尾渣；铜冶炼渣（年度实测量未公开）；炉渣选矿尾渣等8类",
+   "lon": 107.804389,
+   "lat": 22.531211,
+   "aliases": [
+    "广西南国铜业有限责任公司",
+    "南国铜业"
+   ]
+  },
+  {
+   "id": "FM-GX-036",
+   "name": "广西糖业集团红河制糖有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "兴宾区蒙村镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.364553,
+   "lat": 23.606557,
+   "aliases": [
+    "广西糖业集团红河制糖有限公司",
+    "糖业集团红河制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-038",
+   "name": "广西来宾小平阳湘桂制糖有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市小平阳镇工业开发区064县道永鑫路88号年产10万吨绵白糖项目办公楼",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.12622,
+   "lat": 23.400501,
+   "aliases": [
+    "广西来宾小平阳湘桂制糖有限公司",
+    "来宾小平阳湘桂制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-039",
+   "name": "广西来宾湘桂糖业有限责任公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市河西工业开发区",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.221243,
+   "lat": 23.750105,
+   "aliases": [
+    "广西来宾湘桂糖业有限责任公司",
+    "来宾湘桂糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-040",
+   "name": "广西来宾东糖迁江有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "兴宾区迁江镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.96475,
+   "lat": 23.613302,
+   "aliases": [
+    "广西来宾东糖迁江有限公司",
+    "来宾东糖迁江"
+   ]
+  },
+  {
+   "id": "FM-GX-042",
+   "name": "广西来宾东糖凤凰有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "兴宾区凤凰镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.286042,
+   "lat": 23.915827,
+   "aliases": [
+    "广西来宾东糖凤凰有限公司",
+    "来宾东糖凤凰"
+   ]
+  },
+  {
+   "id": "FM-GX-043",
+   "name": "广西来宾东糖桂宝有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市兴宾区正龙乡回龙村",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.399379,
+   "lat": 23.779443,
+   "aliases": [
+    "广西来宾东糖桂宝有限公司",
+    "来宾东糖桂宝"
+   ]
+  },
+  {
+   "id": "MN-GX-014",
+   "name": "广西汇元锰业有限责任公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市长梅路888号",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解二氧化锰渣",
+   "lon": 109.167105,
+   "lat": 23.700307,
+   "aliases": [
+    "广西汇元锰业有限责任公司",
+    "汇元锰业"
+   ]
+  },
+  {
+   "id": "SS-GX-011",
+   "name": "来宾华锡冶炼有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市工业区河南工业园；来宾华锡冶炼现有厂区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "锡锌铟冶炼废渣（年度实测量未公开）；锡沸腾炉收尘（HW48/321-035-48）；脱硫石膏（鉴别前按危废管理）；烟化炉水淬渣（鉴别前按危废管理）等10类",
+   "lon": 109.209089,
+   "lat": 23.70219,
+   "aliases": [
+    "来宾华锡冶炼有限公司",
+    "来宾华锡冶炼"
+   ]
+  },
+  {
+   "id": "SS-GX-018",
+   "name": "广西铁合金有限责任公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "原八一铁合金基地，精确门牌待核",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "铁合金渣",
+   "lon": 109.3,
+   "lat": 23.93,
+   "aliases": [
+    "广西铁合金有限责任公司"
+   ]
+  },
+  {
+   "id": "WM-GX-012",
+   "name": "广西来宾东糖纸业有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市工业区河西工业园",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.212367,
+   "lat": 23.725676,
+   "aliases": [
+    "广西来宾东糖纸业有限公司",
+    "来宾东糖纸业"
+   ]
+  },
+  {
+   "id": "WM-GX-013",
+   "name": "广西仙鹤新材料有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "三江口港产城新区兴宾片区（南泗乡）",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "未检索到（项目建设阶段）",
+   "lon": 109.5167,
+   "lat": 23.6289,
+   "aliases": [
+    "广西仙鹤新材料有限公司",
+    "仙鹤新材料"
+   ]
+  },
+  {
+   "id": "WM-GX-014",
+   "name": "广西湘桂华糖制糖集团来宾纸业有限责任公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "来宾市工业区河南工业园区天然桥东路306号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.2598,
+   "lat": 23.6905,
+   "aliases": [
+    "广西湘桂华糖制糖集团来宾纸业有限责任公司",
+    "湘桂华糖制糖集团来宾纸业"
+   ]
+  },
+  {
+   "id": "WM-GX-015",
+   "name": "广西兴桂纸业有限公司",
+   "city": "来宾市",
+   "county": "兴宾区",
+   "address": "蒙村镇红河农场",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.396586,
+   "lat": 23.713451,
+   "aliases": [
+    "广西兴桂纸业有限公司",
+    "兴桂纸业"
+   ]
+  },
+  {
+   "id": "FM-GX-048",
+   "name": "合山市祥星制糖有限责任公司",
+   "city": "来宾市",
+   "county": "合山市",
+   "address": "合山市岭南工业开发区内",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.894829,
+   "lat": 23.765649,
+   "aliases": [
+    "合山市祥星制糖有限责任公司",
+    "合山市祥星制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-044",
+   "name": "忻城南华糖业有限责任公司",
+   "city": "来宾市",
+   "county": "忻城县",
+   "address": "忻城县城关镇畔水村",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.646778,
+   "lat": 24.071987,
+   "aliases": [
+    "忻城南华糖业有限责任公司",
+    "忻城南华糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-037",
+   "name": "广西糖业集团黔江制糖有限公司",
+   "city": "来宾市",
+   "county": "武宣县",
+   "address": "武宣县三里镇草厂村",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.764365,
+   "lat": 23.56568,
+   "aliases": [
+    "广西糖业集团黔江制糖有限公司",
+    "糖业集团黔江制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-045",
+   "name": "广西博宣食品有限公司",
+   "city": "来宾市",
+   "county": "武宣县",
+   "address": "来宾市武宣县武宣镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.673205,
+   "lat": 23.606865,
+   "aliases": [
+    "广西博宣食品有限公司",
+    "博宣食品"
+   ]
+  },
+  {
+   "id": "FM-GX-041",
+   "name": "广西来宾东糖石龙有限公司",
+   "city": "来宾市",
+   "county": "象州县",
+   "address": "象州县石龙镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.51612,
+   "lat": 23.850413,
+   "aliases": [
+    "广西来宾东糖石龙有限公司",
+    "来宾东糖石龙"
+   ]
+  },
+  {
+   "id": "FM-GX-046",
+   "name": "广西博华食品有限公司",
+   "city": "来宾市",
+   "county": "象州县",
+   "address": "象州县罗秀镇糖厂路18号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.897752,
+   "lat": 24.073952,
+   "aliases": [
+    "广西博华食品有限公司",
+    "博华食品"
+   ]
+  },
+  {
+   "id": "MN-GX-013",
+   "name": "广西下田锰矿有限责任公司",
+   "city": "来宾市",
+   "county": "象州县",
+   "address": "象州镇古才村民委下田塘口",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解二氧化锰渣",
+   "lon": 109.689877,
+   "lat": 24.020123,
+   "aliases": [
+    "广西下田锰矿有限责任公司",
+    "下田锰矿"
+   ]
+  },
+  {
+   "id": "SS-GX-021",
+   "name": "广西飞南资源利用有限公司",
+   "city": "来宾市",
+   "county": "象州县",
+   "address": "象州县工业园区石龙片区B区佳园二路1号",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "HW02 医药废物；HW06 含有机溶剂废物；HW08 废矿物油与含矿物油废物；HW11 精（蒸）馏残渣等10类",
+   "lon": 109.53,
+   "lat": 23.84,
+   "aliases": [
+    "广西飞南资源利用有限公司",
+    "飞南资源利用"
+   ]
+  },
+  {
+   "id": "FM-GX-047",
+   "name": "广西金秀东达制糖有限责任公司",
+   "city": "来宾市",
+   "county": "金秀瑶族自治县",
+   "address": "金秀瑶族自治县头排镇建中街37号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 110.05443,
+   "lat": 24.329329,
+   "aliases": [
+    "广西金秀东达制糖有限责任公司",
+    "金秀东达制糖"
+   ]
+  },
+  {
+   "id": "SS-GX-001",
+   "name": "广西柳州钢铁集团有限公司（柳州本部）",
+   "city": "柳州市",
+   "county": "柳北区",
+   "address": "柳州市北雀路117号（柳州本部）",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "钢渣；高炉渣",
+   "lon": 109.380556,
+   "lat": 24.403333,
+   "aliases": [
+    "广西柳州钢铁集团有限公司",
+    "柳州钢铁集团"
+   ]
+  },
+  {
+   "id": "FM-GX-016",
+   "name": "广西凤糖生化股份有限公司柳城糖厂",
+   "city": "柳州市",
+   "county": "柳城县",
+   "address": "柳城县大埔镇柳糖路60号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.234042,
+   "lat": 24.659367,
+   "aliases": [
+    "广西凤糖生化股份有限公司柳城糖厂",
+    "凤糖生化股份有限公司柳城糖厂"
+   ]
+  },
+  {
+   "id": "FM-GX-017",
+   "name": "广西凤糖六塘制糖有限责任公司",
+   "city": "柳州市",
+   "county": "柳城县",
+   "address": "柳城县六塘镇查岩屯",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.931948,
+   "lat": 24.510491,
+   "aliases": [
+    "广西凤糖六塘制糖有限责任公司",
+    "凤糖六塘制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-015",
+   "name": "广西糖业集团柳兴制糖有限公司",
+   "city": "柳州市",
+   "county": "柳江区",
+   "address": "柳州市柳石路迎宾路口",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.433539,
+   "lat": 24.203681,
+   "aliases": [
+    "广西糖业集团柳兴制糖有限公司",
+    "糖业集团柳兴制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-018",
+   "name": "广西凤糖柳江制糖有限责任公司",
+   "city": "柳州市",
+   "county": "柳江区",
+   "address": "广西柳州市柳江区拉堡镇柳堡路1-1号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.306436,
+   "lat": 24.259997,
+   "aliases": [
+    "广西凤糖柳江制糖有限责任公司",
+    "凤糖柳江制糖"
+   ]
+  },
+  {
+   "id": "SS-GX-030",
+   "name": "广西融安兴隆锌业有限责任公司",
+   "city": "柳州市",
+   "county": "融安县",
+   "address": "融安县浮石镇一带，精确门牌未检索到",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "浸出渣",
+   "lon": 109.35,
+   "lat": 25.1,
+   "aliases": [
+    "广西融安兴隆锌业有限责任公司",
+    "融安兴隆锌业"
+   ]
+  },
+  {
+   "id": "FM-GX-020",
+   "name": "广西凤糖融水和睦制糖有限责任公司",
+   "city": "柳州市",
+   "county": "融水县",
+   "address": "融水县和睦镇政和路1号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.158866,
+   "lat": 24.901282,
+   "aliases": [
+    "广西凤糖融水和睦制糖有限责任公司",
+    "凤糖融水和睦制糖"
+   ]
+  },
+  {
+   "id": "WM-GX-004",
+   "name": "柳州市沁原纸业发展有限公司",
+   "city": "柳州市",
+   "county": "鱼峰区",
+   "address": "鱼峰区洛埠镇振鹤街318号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "造纸白泥",
+   "lon": 109.531627,
+   "lat": 24.428217,
+   "aliases": [
+    "柳州市沁原纸业发展有限公司",
+    "柳州市沁原纸业发展"
+   ]
+  },
+  {
+   "id": "MN-GX-017",
+   "name": "广西桂柳新材料股份有限公司",
+   "city": "柳州市",
+   "county": "鱼峰区/鹿寨县",
+   "address": "柳州市鱼峰区新柳大道159号",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解二氧化锰渣",
+   "lon": 109.605183,
+   "lat": 24.394991,
+   "aliases": [
+    "广西桂柳新材料股份有限公司",
+    "桂柳新材料"
+   ]
+  },
+  {
+   "id": "FM-GX-019",
+   "name": "广西凤糖鹿寨制糖有限责任公司",
+   "city": "柳州市",
+   "county": "鹿寨县",
+   "address": "广西鹿寨县鹿寨镇建中西路88号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.727176,
+   "lat": 24.474839,
+   "aliases": [
+    "广西凤糖鹿寨制糖有限责任公司",
+    "凤糖鹿寨制糖"
+   ]
+  },
+  {
+   "id": "WM-GX-005",
+   "name": "广西凤糖鹿寨纸业有限公司",
+   "city": "柳州市",
+   "county": "鹿寨县",
+   "address": "鹿寨镇中心工业园区/建中西路99号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "未检索到",
+   "lon": 109.7548,
+   "lat": 24.4864,
+   "aliases": [
+    "广西凤糖鹿寨纸业有限公司",
+    "凤糖鹿寨纸业"
+   ]
+  },
+  {
+   "id": "SS-GX-019",
+   "name": "广西桂康新材料有限公司",
+   "city": "桂林市",
+   "county": "灵川县",
+   "address": "三街镇桂康路1号",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "锰系铁合金渣、水渣、除尘灰",
+   "lon": 110.38,
+   "lat": 25.47,
+   "aliases": [
+    "广西桂康新材料有限公司",
+    "桂康新材料"
+   ]
+  },
+  {
+   "id": "SS-GX-015",
+   "name": "广西梧州市西南特钢有限公司",
+   "city": "梧州市",
+   "county": null,
+   "address": "梧州市钢铁/不锈钢产业园区，精确厂址待核",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "钢渣（项目设置钢渣堆场）",
+   "lon": 111.29,
+   "lat": 23.53,
+   "aliases": [
+    "广西梧州市西南特钢有限公司",
+    "梧州市西南特钢"
+   ]
+  },
+  {
+   "id": "SS-GX-005",
+   "name": "广西翅冀钢铁有限公司",
+   "city": "梧州市",
+   "county": "藤县",
+   "address": "塘步镇孔良村；梧州临港经济区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "高炉渣、钢渣（年度实测量未公开）；钢渣；高炉渣",
+   "lon": 111.17,
+   "lat": 23.39,
+   "aliases": [
+    "广西翅冀钢铁有限公司",
+    "翅冀钢铁"
+   ]
+  },
+  {
+   "id": "WM-GX-009",
+   "name": "广西建晖纸业有限公司",
+   "city": "梧州市",
+   "county": "藤县",
+   "address": "藤州镇绿色新材料产业园建晖大道1号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "未检索到（项目建设阶段）",
+   "lon": 110.9332,
+   "lat": 23.375,
+   "aliases": [
+    "广西建晖纸业有限公司",
+    "建晖纸业"
+   ]
+  },
+  {
+   "id": "SS-GX-013",
+   "name": "梧州市永达钢铁有限公司（永达钢铁集团）",
+   "city": "梧州市",
+   "county": "长洲区",
+   "address": "梧州市不锈钢制品产业园区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "电炉钢渣、炼钢除尘灰；钢渣；炼钢除尘灰（历史代码HW31/312-001-31）；钢渣、除尘灰（待企业环境信息核验）",
+   "lon": 111.25,
+   "lat": 23.53,
+   "aliases": [
+    "梧州市永达钢铁有限公司",
+    "梧州市永达钢铁"
+   ]
+  },
+  {
+   "id": "SS-GX-032",
+   "name": "梧州市永达特钢有限公司",
+   "city": "梧州市",
+   "county": "长洲区",
+   "address": "长洲区不锈钢制品产业园区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "炼钢除尘灰（历史代码HW31/312-001-31）",
+   "lon": 111.24,
+   "lat": 23.53,
+   "aliases": [
+    "梧州市永达特钢有限公司",
+    "梧州市永达特钢"
+   ]
+  },
+  {
+   "id": "SS-GX-033",
+   "name": "广西梧州市金海不锈钢有限公司",
+   "city": "梧州市",
+   "county": "长洲区",
+   "address": "长洲区不锈钢制品产业园区；丰盈路2号附近",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "不锈钢钢渣、氧化铁皮、除尘灰；氧化铁皮、切头切尾、酸洗污泥；钢渣；氧化铁皮等6类",
+   "lon": 111.25,
+   "lat": 23.53,
+   "aliases": [
+    "广西梧州市金海不锈钢有限公司",
+    "梧州市金海不锈钢"
+   ]
+  },
+  {
+   "id": "SS-GX-034",
+   "name": "梧州市鑫峰特钢有限公司",
+   "city": "梧州市",
+   "county": "长洲区",
+   "address": "长洲区不锈钢产业园区东鹏地块",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "不锈钢钢渣、除尘灰、氧化铁皮、酸洗污泥；氧化铁皮、废乳化液、污泥等（以报告表为准）；炼钢除尘灰（历史代码HW31/312-001-31）",
+   "lon": 111.225445,
+   "lat": 23.522443,
+   "aliases": [
+    "梧州市鑫峰特钢有限公司",
+    "梧州市鑫峰特钢"
+   ]
+  },
+  {
+   "id": "SS-GX-020",
+   "name": "梧州金升铜业股份有限公司",
+   "city": "梧州市",
+   "county": "龙圩区",
+   "address": "梧州进口再生资源加工园区广源大道一带",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "冶炼渣",
+   "lon": 111.24,
+   "lat": 23.34,
+   "aliases": [
+    "梧州金升铜业股份有限公司",
+    "梧州金升铜业"
+   ]
+  },
+  {
+   "id": "SS-GX-022",
+   "name": "广西金翔铜业有限公司",
+   "city": "梧州市",
+   "county": "龙圩区",
+   "address": "新地镇大车顶循环经济产业园区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "冶炼渣",
+   "lon": 111.25,
+   "lat": 23.35,
+   "aliases": [
+    "广西金翔铜业有限公司",
+    "金翔铜业"
+   ]
+  },
+  {
+   "id": "SS-GX-023",
+   "name": "梧州华锡环保科技有限公司（原梧州华锡冶炼有限公司）",
+   "city": "梧州市",
+   "county": "龙圩区",
+   "address": "龙圩镇龙城西路168号",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "冶炼渣",
+   "lon": 111.21,
+   "lat": 23.4,
+   "aliases": [
+    "梧州华锡环保科技有限公司",
+    "梧州华锡环保科技"
+   ]
+  },
+  {
+   "id": "SS-GX-024",
+   "name": "广西震宇环保科技有限公司",
+   "city": "梧州市",
+   "county": "龙圩区",
+   "address": "梧州临港经济区循环片区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "水淬渣；转炉炉渣、低温熔炼渣、除尘灰、污水处理泥渣、石膏渣等",
+   "lon": 111.27,
+   "lat": 23.35,
+   "aliases": [
+    "广西震宇环保科技有限公司",
+    "震宇环保科技"
+   ]
+  },
+  {
+   "id": "SS-GX-025",
+   "name": "骆驼集团华南再生资源有限公司",
+   "city": "梧州市",
+   "county": "龙圩区",
+   "address": "梧州进口再生资源加工园区内",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "HW31：384-004-31、900-052-31废铅蓄电池",
+   "lon": 111.26,
+   "lat": 23.35,
+   "aliases": [
+    "骆驼集团华南再生资源有限公司",
+    "骆驼集团华南再生资源"
+   ]
+  },
+  {
+   "id": "SS-GX-010",
+   "name": "广西南丹南方金属有限公司",
+   "city": "河池市",
+   "county": "南丹县",
+   "address": "车河镇；河池·南丹有色金属新材料工业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "铅烟尘（HW48/321-014-48）；铜浮渣（HW48/321-016-48）；酸泥（HW29/321-033-29）；除铅渣（HW27/261-046-27）等22类",
+   "lon": 107.82,
+   "lat": 22.54,
+   "aliases": [
+    "广西南丹南方金属有限公司",
+    "南丹南方金属"
+   ]
+  },
+  {
+   "id": "SS-GX-012",
+   "name": "南丹县南方有色金属有限责任公司（锌系统）",
+   "city": "河池市",
+   "county": "南丹县",
+   "address": "车河镇丰塘坳；河池·南丹有色金属新材料工业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "锌冶炼浸出渣、除铁渣等（年度实测量未公开）；锌冶炼渣（年度实测量未公开）；浸出渣（HW48/321-004-48）；除铁渣（HW48/321-007-48）等11类",
+   "lon": 107.67,
+   "lat": 24.86,
+   "aliases": [
+    "南丹县南方有色金属有限责任公司",
+    "南丹县南方有色金属"
+   ]
+  },
+  {
+   "id": "FM-GX-031",
+   "name": "广西糖业集团达华制糖有限公司",
+   "city": "河池市",
+   "county": "大化瑶族自治县",
+   "address": "大化瑶族自治县大化镇古感社区局劳屯",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.015421875,
+   "lat": 23.7093875,
+   "aliases": [
+    "广西糖业集团达华制糖有限公司",
+    "糖业集团达华制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-032",
+   "name": "广西博庆食品有限公司石别糖厂",
+   "city": "河池市",
+   "county": "宜州区",
+   "address": "宜州区石别镇905县道西50米",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.606296875,
+   "lat": 24.3273125,
+   "aliases": [
+    "广西博庆食品有限公司石别糖厂",
+    "博庆食品有限公司石别糖厂"
+   ]
+  },
+  {
+   "id": "MN-GX-018",
+   "name": "广西申亚锰业有限责任公司",
+   "city": "河池市",
+   "county": "宜州区",
+   "address": "宜州工业园区叶茂原机床厂内加工区",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 108.544862,
+   "lat": 24.51184,
+   "aliases": [
+    "广西申亚锰业有限责任公司",
+    "申亚锰业"
+   ]
+  },
+  {
+   "id": "WM-GX-011",
+   "name": "广西博冠环保制品有限公司",
+   "city": "河池市",
+   "county": "宜州区",
+   "address": "洛东镇洛东工业园区",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 108.906223,
+   "lat": 24.482082,
+   "aliases": [
+    "广西博冠环保制品有限公司",
+    "博冠环保制品"
+   ]
+  },
+  {
+   "id": "FM-GX-034",
+   "name": "广西凤糖罗城制糖有限责任公司",
+   "city": "河池市",
+   "county": "罗城仫佬族自治县",
+   "address": "罗城仫佬族自治县小长安镇牛毕街",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.130234375,
+   "lat": 24.8463875,
+   "aliases": [
+    "广西凤糖罗城制糖有限责任公司",
+    "凤糖罗城制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-035",
+   "name": "广西都安湘桂糖业有限责任公司",
+   "city": "河池市",
+   "county": "都安瑶族自治县",
+   "address": "都安瑶族自治县澄江镇八仙经济开发区",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.145414,
+   "lat": 23.905146,
+   "aliases": [
+    "广西都安湘桂糖业有限责任公司",
+    "都安湘桂糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-033",
+   "name": "广西博东食品有限公司",
+   "city": "河池市",
+   "county": "金城江区",
+   "address": "金城江区东江工业园区",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.158671875,
+   "lat": 24.7097375,
+   "aliases": [
+    "广西博东食品有限公司",
+    "博东食品"
+   ]
+  },
+  {
+   "id": "SS-GX-029",
+   "name": "广西誉升锗业高新技术有限公司",
+   "city": "河池市",
+   "county": "金城江区",
+   "address": "河池市大任产业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "冶炼渣",
+   "lon": 108.09,
+   "lat": 24.7,
+   "aliases": [
+    "广西誉升锗业高新技术有限公司",
+    "誉升锗业高新技术"
+   ]
+  },
+  {
+   "id": "SS-GX-007",
+   "name": "广西柳钢中金不锈钢有限公司",
+   "city": "玉林市",
+   "county": "博白县",
+   "address": "龙潭镇；龙港新区玉林龙潭产业园南北三号路",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "长短流程结合冶炼废渣",
+   "lon": 109.74,
+   "lat": 21.69,
+   "aliases": [
+    "广西柳钢中金不锈钢有限公司",
+    "柳钢中金不锈钢"
+   ]
+  },
+  {
+   "id": "SS-GX-026",
+   "name": "广西银亿新材料有限公司",
+   "city": "玉林市",
+   "county": "博白县",
+   "address": "龙港新区玉林龙潭产业园区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "除杂渣、酸溶渣、废活性炭、污水处理污泥、原料包装物；含镍废渣；湿法镍冶炼废渣",
+   "lon": 109.73,
+   "lat": 21.67,
+   "aliases": [
+    "广西银亿新材料有限公司",
+    "银亿新材料"
+   ]
+  },
+  {
+   "id": "SS-GX-027",
+   "name": "广西华友新材料有限公司",
+   "city": "玉林市",
+   "county": "博白县",
+   "address": "龙港新区玉林龙潭产业园区，精确门牌待核",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "可回收利用固体废物及危险废物（具体分项见环评）",
+   "lon": 109.79,
+   "lat": 21.81,
+   "aliases": [
+    "广西华友新材料有限公司",
+    "华友新材料"
+   ]
+  },
+  {
+   "id": "FM-GX-053",
+   "name": "广西百色市万林糖业有限公司",
+   "city": "百色市",
+   "county": "右江区",
+   "address": "右江区阳圩镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 106.461303,
+   "lat": 23.909255,
+   "aliases": [
+    "广西百色市万林糖业有限公司",
+    "百色市万林糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-051",
+   "name": "广西平果南华糖业有限责任公司",
+   "city": "百色市",
+   "county": "平果市",
+   "address": "平果市马头镇平百二级路那厘段88号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.601918,
+   "lat": 23.32039,
+   "aliases": [
+    "广西平果南华糖业有限责任公司",
+    "平果南华糖业"
+   ]
+  },
+  {
+   "id": "RM-GX-001",
+   "name": "中国铝业股份有限公司广西分公司",
+   "city": "百色市",
+   "county": "平果市",
+   "address": "平果市城西平果铝业公司内",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 107.51574,
+   "lat": 23.341047,
+   "aliases": [
+    "中国铝业股份有限公司广西分公司",
+    "中国铝业股份有限公司广西分"
+   ]
+  },
+  {
+   "id": "RM-GX-002",
+   "name": "广西华银铝业有限公司",
+   "city": "百色市",
+   "county": "德保县",
+   "address": "马隘镇广西华银铝业有限公司",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 106.599452,
+   "lat": 23.374139,
+   "aliases": [
+    "广西华银铝业有限公司",
+    "华银铝业"
+   ]
+  },
+  {
+   "id": "FM-GX-049",
+   "name": "广西田东南华糖业有限责任公司一糖厂",
+   "city": "百色市",
+   "county": "田东县",
+   "address": "田东县林逢镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.212103,
+   "lat": 23.589295,
+   "aliases": [
+    "广西田东南华糖业有限责任公司一糖厂",
+    "田东南华糖业有限责任公司一糖厂"
+   ]
+  },
+  {
+   "id": "FM-GX-050",
+   "name": "广西田东南华糖业有限责任公司二糖厂",
+   "city": "百色市",
+   "county": "田东县",
+   "address": "田东县城东郊",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.125609,
+   "lat": 23.596706,
+   "aliases": [
+    "广西田东南华糖业有限责任公司二糖厂",
+    "田东南华糖业有限责任公司二糖厂"
+   ]
+  },
+  {
+   "id": "RM-GX-004",
+   "name": "广西田东锦鑫化工有限公司",
+   "city": "百色市",
+   "county": "田东县",
+   "address": "田东县平马镇百林村/田东锦江循环经济产业园",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 107.129495,
+   "lat": 23.642559,
+   "aliases": [
+    "广西田东锦鑫化工有限公司",
+    "田东锦鑫化工"
+   ]
+  },
+  {
+   "id": "WM-GX-017",
+   "name": "广西春盛纸业有限公司",
+   "city": "百色市",
+   "county": "田东县",
+   "address": "思林镇十二桥",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 107.344392,
+   "lat": 23.498479,
+   "aliases": [
+    "广西春盛纸业有限公司",
+    "春盛纸业"
+   ]
+  },
+  {
+   "id": "FM-GX-052",
+   "name": "广西田林和平糖业有限公司",
+   "city": "百色市",
+   "county": "田林县",
+   "address": "田林县利周乡和平村（老山林场）",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 106.321716,
+   "lat": 24.278476,
+   "aliases": [
+    "广西田林和平糖业有限公司",
+    "田林和平糖业"
+   ]
+  },
+  {
+   "id": "MN-GX-008",
+   "name": "广西田阳桂航锰业有限公司",
+   "city": "百色市",
+   "county": "田阳区",
+   "address": "田州镇平坡村",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.915955,
+   "lat": 23.774707,
+   "aliases": [
+    "广西田阳桂航锰业有限公司",
+    "田阳桂航锰业"
+   ]
+  },
+  {
+   "id": "WM-GX-016",
+   "name": "田阳南华纸业有限公司",
+   "city": "百色市",
+   "county": "田阳区",
+   "address": "田州镇民乐街106号",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 106.8483,
+   "lat": 23.7425,
+   "aliases": [
+    "田阳南华纸业有限公司",
+    "田阳南华纸业"
+   ]
+  },
+  {
+   "id": "MN-GX-001",
+   "name": "靖西市鑫源锰业有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "新靖镇新龙路 68 号靖西市易地扶贫搬迁工程 “老乡家园” 配套产业园 K2-4 一期 (18 号) 厂房第四层",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.696211,
+   "lat": 22.94713,
+   "aliases": [
+    "靖西市鑫源锰业有限公司",
+    "靖西市鑫源锰业"
+   ]
+  },
+  {
+   "id": "MN-GX-002",
+   "name": "靖西市大西南锰业有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "湖润镇锰工业基地",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.694242,
+   "lat": 22.945633,
+   "aliases": [
+    "靖西市大西南锰业有限公司",
+    "靖西市大西南锰业"
+   ]
+  },
+  {
+   "id": "MN-GX-003",
+   "name": "靖西湘潭电化科技有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "湖润新兴工业园片区",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解二氧化锰渣",
+   "lon": 106.6516,
+   "lat": 22.9061,
+   "aliases": [
+    "靖西湘潭电化科技有限公司",
+    "靖西湘潭电化科技"
+   ]
+  },
+  {
+   "id": "MN-GX-004",
+   "name": "广西靖西市一洲锰业有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "湖润镇新兴街165号",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解二氧化锰渣",
+   "lon": 106.65849,
+   "lat": 22.913234,
+   "aliases": [
+    "广西靖西市一洲锰业有限公司",
+    "靖西市一洲锰业"
+   ]
+  },
+  {
+   "id": "MN-GX-005",
+   "name": "广西斯达特锰材料有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "靖西市湖润镇湖润街389号",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.700921,
+   "lat": 22.964958,
+   "aliases": [
+    "广西斯达特锰材料有限公司",
+    "斯达特锰材料"
+   ]
+  },
+  {
+   "id": "MN-GX-006",
+   "name": "靖西市锰矿有限责任公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "湖润镇",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.702681,
+   "lat": 22.96395,
+   "aliases": [
+    "靖西市锰矿有限责任公司",
+    "靖西市锰矿"
+   ]
+  },
+  {
+   "id": "MN-GX-007",
+   "name": "靖西百矿锰业有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "湖润镇锰工业园区",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "电解金属锰锰渣",
+   "lon": 106.660898,
+   "lat": 22.912046,
+   "aliases": [
+    "靖西百矿锰业有限公司",
+    "靖西百矿锰业"
+   ]
+  },
+  {
+   "id": "RM-GX-003",
+   "name": "广西信发铝电有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "靖西市渠洋镇铝工业区",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 106.391429,
+   "lat": 23.261466,
+   "aliases": [
+    "广西信发铝电有限公司",
+    "信发铝电"
+   ]
+  },
+  {
+   "id": "RM-GX-005",
+   "name": "靖西天桂铝业有限公司",
+   "city": "百色市",
+   "county": "靖西市",
+   "address": "靖西市铝工业园区（武平镇马亮村一带）",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 106.443476,
+   "lat": 23.261826,
+   "aliases": [
+    "靖西天桂铝业有限公司",
+    "靖西天桂铝业"
+   ]
+  },
+  {
+   "id": "MN-GX-015",
+   "name": "桂平南海科技有限公司",
+   "city": "贵港市",
+   "county": "桂平市",
+   "address": "木圭镇祝兴村老虎岭",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "高纯硫酸锰渣",
+   "lon": 110.288041,
+   "lat": 23.55041,
+   "aliases": [
+    "桂平南海科技有限公司",
+    "桂平南海科技"
+   ]
+  },
+  {
+   "id": "MN-GX-016",
+   "name": "广西远辰新能源材料有限责任公司",
+   "city": "贵港市",
+   "county": "桂平市",
+   "address": "广西桂平市木圭镇老虎岭",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "硫酸锰浸出渣（滤渣）",
+   "lon": 110.3004,
+   "lat": 23.53444,
+   "aliases": [
+    "广西远辰新能源材料有限责任公司",
+    "远辰新能源材料"
+   ]
+  },
+  {
+   "id": "FM-GX-028",
+   "name": "广西糖业集团西江制糖有限公司",
+   "city": "贵港市",
+   "county": "港北区",
+   "address": "港北区西江园路19号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.555796875,
+   "lat": 23.0750375,
+   "aliases": [
+    "广西糖业集团西江制糖有限公司",
+    "糖业集团西江制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-030",
+   "name": "广西广业贵糖糖业集团有限公司",
+   "city": "贵港市",
+   "county": "港北区",
+   "address": "贵港高新区粤桂产业园幸福路1号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.750890625,
+   "lat": 23.1224375,
+   "aliases": [
+    "广西广业贵糖糖业集团有限公司",
+    "广业贵糖糖业集团"
+   ]
+  },
+  {
+   "id": "SS-GX-004",
+   "name": "广西贵港钢铁集团有限公司",
+   "city": "贵港市",
+   "county": "港北区",
+   "address": "贵城街道南平路6号",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "长短流程结合冶炼废渣",
+   "lon": 109.65,
+   "lat": 23.09,
+   "aliases": [
+    "广西贵港钢铁集团有限公司",
+    "贵港钢铁集团"
+   ]
+  },
+  {
+   "id": "WM-GX-010",
+   "name": "广西广业贵糖糖业集团有限公司",
+   "city": "贵港市",
+   "county": "港北区",
+   "address": "武乐镇粤桂产业园",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收苛化白泥",
+   "lon": 109.756575,
+   "lat": 23.121427,
+   "aliases": [
+    "广西广业贵糖糖业集团有限公司",
+    "广业贵糖糖业集团"
+   ]
+  },
+  {
+   "id": "FM-GX-029",
+   "name": "贵港市甘化糖业有限公司",
+   "city": "贵港市",
+   "county": "覃塘区",
+   "address": "覃塘区覃塘镇南郊",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.411792,
+   "lat": 23.093112,
+   "aliases": [
+    "贵港市甘化糖业有限公司",
+    "贵港市甘化糖业"
+   ]
+  },
+  {
+   "id": "SS-GX-014",
+   "name": "广西贵丰特钢有限公司",
+   "city": "贺州市",
+   "county": "八步区",
+   "address": "广西东融产业园灵峰产业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "电炉除尘灰",
+   "lon": 111.93,
+   "lat": 23.99,
+   "aliases": [
+    "广西贵丰特钢有限公司",
+    "贵丰特钢"
+   ]
+  },
+  {
+   "id": "SS-GX-017",
+   "name": "广西贺州市科信达金属制品有限公司",
+   "city": "贺州市",
+   "county": "八步区",
+   "address": "信都工业区/广西东融产业园，精确门牌待核",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "电炉除尘灰",
+   "lon": 111.76,
+   "lat": 23.98,
+   "aliases": [
+    "广西贺州市科信达金属制品有限公司",
+    "贺州市科信达金属制品"
+   ]
+  },
+  {
+   "id": "SS-GX-031",
+   "name": "广西桂鑫钢铁集团有限公司",
+   "city": "贺州市",
+   "county": "八步区",
+   "address": "信都镇工业区（广西东融产业园）",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "钢渣、铸余渣、电炉/LF除尘灰、废耐火材料；钢渣/电炉除尘灰（待年度台账核验）；钢渣、铸余渣；电炉、LF及连铸除尘灰等6类",
+   "lon": 111.75,
+   "lat": 23.98,
+   "aliases": [
+    "广西桂鑫钢铁集团有限公司",
+    "桂鑫钢铁集团"
+   ]
+  },
+  {
+   "id": "SS-GX-028",
+   "name": "中稀（广西）金源稀土新材料有限公司",
+   "city": "贺州市",
+   "county": "平桂区",
+   "address": "旺高工业开发区",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "生产过程一般工业固废",
+   "lon": 111.4,
+   "lat": 24.58,
+   "aliases": [
+    "中稀金源稀土新材料有限公司",
+    "中稀金源稀土新材料"
+   ]
+  },
+  {
+   "id": "FM-GX-022",
+   "name": "广西浦北县湘桂糖业有限责任公司",
+   "city": "钦州市",
+   "county": "浦北县",
+   "address": "浦北县张黄镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.45585,
+   "lat": 22.01064,
+   "aliases": [
+    "广西浦北县湘桂糖业有限责任公司",
+    "浦北县湘桂糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-025",
+   "name": "广西浦北县安寨糖业有限公司",
+   "city": "钦州市",
+   "county": "浦北县",
+   "address": "浦北县寨圩镇（原寨圩糖厂内）",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 109.62431,
+   "lat": 22.5709,
+   "aliases": [
+    "广西浦北县安寨糖业有限公司",
+    "浦北县安寨糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-023",
+   "name": "广西陆屋欧亚糖业有限公司",
+   "city": "钦州市",
+   "county": "灵山县",
+   "address": "灵山县陆屋镇北郊",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.9472,
+   "lat": 22.28071,
+   "aliases": [
+    "广西陆屋欧亚糖业有限公司",
+    "陆屋欧亚糖业"
+   ]
+  },
+  {
+   "id": "FM-GX-021",
+   "name": "广西糖业集团平吉制糖有限公司",
+   "city": "钦州市",
+   "county": "钦北区",
+   "address": "钦北区平吉镇平吉糖厂",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.75994,
+   "lat": 22.15837,
+   "aliases": [
+    "广西糖业集团平吉制糖有限公司",
+    "糖业集团平吉制糖"
+   ]
+  },
+  {
+   "id": "MN-GX-009",
+   "name": "广西埃索凯新材料科技有限公司",
+   "city": "钦州市",
+   "county": "钦北区",
+   "address": "皇马工业园四区",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "高纯硫酸锰渣",
+   "lon": 108.617879,
+   "lat": 22.100522,
+   "aliases": [
+    "广西埃索凯新材料科技有限公司",
+    "埃索凯新材料科技"
+   ]
+  },
+  {
+   "id": "MN-GX-010",
+   "name": "钦州南海化工有限公司",
+   "city": "钦州市",
+   "county": "钦北区",
+   "address": "皇马工业园四区（大垌镇旧钦师）",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "高纯硫酸锰渣",
+   "lon": 108.626439,
+   "lat": 22.093109,
+   "aliases": [
+    "钦州南海化工有限公司",
+    "钦州南海化工"
+   ]
+  },
+  {
+   "id": "MN-GX-012",
+   "name": "广西锰华新能源科技发展有限公司",
+   "city": "钦州市",
+   "county": "钦北区",
+   "address": "皇马工业园四区",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "硫酸锰浸出渣（高纯锰渣）",
+   "lon": 108.62064,
+   "lat": 22.103387,
+   "aliases": [
+    "广西锰华新能源科技发展有限公司",
+    "锰华新能源科技发展"
+   ]
+  },
+  {
+   "id": "FM-GX-024",
+   "name": "广西那彭欧亚糖业有限公司",
+   "city": "钦州市",
+   "county": "钦南区",
+   "address": "钦南区那彭镇彭丽路158号",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 108.93372,
+   "lat": 21.98407,
+   "aliases": [
+    "广西那彭欧亚糖业有限公司",
+    "那彭欧亚糖业"
+   ]
+  },
+  {
+   "id": "MN-GX-011",
+   "name": "广西禹鼎新材料科技有限公司",
+   "city": "钦州市",
+   "county": "钦南区",
+   "address": "钦州港金鼓江工业园内",
+   "category": "锰渣",
+   "category_key": "manganese_slag",
+   "waste_type_cn": "高纯硫酸锰渣",
+   "lon": 108.613709,
+   "lat": 21.724328,
+   "aliases": [
+    "广西禹鼎新材料科技有限公司",
+    "禹鼎新材料科技"
+   ]
+  },
+  {
+   "id": "WM-GX-008",
+   "name": "广西金桂浆纸业有限公司",
+   "city": "钦州市",
+   "county": "钦州港片区",
+   "address": "钦州港经济技术开发区",
+   "category": "白泥",
+   "category_key": "white_mud",
+   "waste_type_cn": "碱回收白泥",
+   "lon": 108.6964,
+   "lat": 21.7177,
+   "aliases": [
+    "广西金桂浆纸业有限公司",
+    "金桂浆纸业"
+   ]
+  },
+  {
+   "id": "FM-GX-026",
+   "name": "广西糖业集团昌菱制糖有限公司",
+   "city": "防城港市",
+   "county": "上思县",
+   "address": "在妙镇",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.840671875,
+   "lat": 22.1146375,
+   "aliases": [
+    "广西糖业集团昌菱制糖有限公司",
+    "糖业集团昌菱制糖"
+   ]
+  },
+  {
+   "id": "FM-GX-027",
+   "name": "广西上上糖业有限公司",
+   "city": "防城港市",
+   "county": "上思县",
+   "address": "城西郊",
+   "category": "绿泥",
+   "category_key": "green_mud",
+   "waste_type_cn": "制糖滤泥",
+   "lon": 107.943015625,
+   "lat": 22.1359125,
+   "aliases": [
+    "广西上上糖业有限公司",
+    "上上糖业"
+   ]
+  },
+  {
+   "id": "RM-GX-006",
+   "name": "广西华昇新材料有限公司",
+   "city": "防城港市",
+   "county": "港口区",
+   "address": "企沙工业园区（防城港生态铝工业基地）玉石滩大道西侧",
+   "category": "赤泥",
+   "category_key": "red_mud",
+   "waste_type_cn": "赤泥",
+   "lon": 108.44817,
+   "lat": 21.572509,
+   "aliases": [
+    "广西华昇新材料有限公司",
+    "华昇新材料"
+   ]
+  },
+  {
+   "id": "SS-GX-002",
+   "name": "广西钢铁集团有限公司（柳钢防城港基地）",
+   "city": "防城港市",
+   "county": "港口区",
+   "address": "企沙工业园；北部湾大道196号附近（柳钢防城港基地）",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "钢渣；高炉渣",
+   "lon": 108.37,
+   "lat": 21.67,
+   "aliases": [
+    "广西钢铁集团有限公司",
+    "钢铁集团"
+   ]
+  },
+  {
+   "id": "SS-GX-003",
+   "name": "广西盛隆冶金有限公司",
+   "city": "防城港市",
+   "county": "港口区",
+   "address": "锦和大道6号；大西南临港工业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "钢渣；高炉渣",
+   "lon": 108.42,
+   "lat": 21.68,
+   "aliases": [
+    "广西盛隆冶金有限公司",
+    "盛隆冶金"
+   ]
+  },
+  {
+   "id": "SS-GX-008",
+   "name": "广西金川有色金属有限公司",
+   "city": "防城港市",
+   "county": "港口区",
+   "address": "企沙镇金川工业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "铜再选尾矿（环评/项目口径）",
+   "lon": 108.439164,
+   "lat": 21.562058,
+   "aliases": [
+    "广西金川有色金属有限公司",
+    "金川有色金属"
+   ]
+  },
+  {
+   "id": "SS-GX-016",
+   "name": "防城港市福城钢铁制品有限公司",
+   "city": "防城港市",
+   "county": "防城区",
+   "address": "茅岭工业园",
+   "category": "冶炼渣",
+   "category_key": "smelting_slag",
+   "waste_type_cn": "冶炼渣",
+   "lon": 108.46,
+   "lat": 21.87,
+   "aliases": [
+    "防城港市福城钢铁制品有限公司",
+    "防城港市福城钢铁制品"
+   ]
+  }
+ ]
+}

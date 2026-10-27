@@ -6,7 +6,7 @@
 //           closed on its own: a fix removes it, and one judged not worth fixing is closed with a reason.
 // Delivery goes through sendAlert (alert webhook or ops chat, internal-chat fallback; off unless FEISHU_INTERNAL_ENABLED).
 import { addDays, beijingAt, beijingDate, beijingDay, beijingStamp, isValidDate } from "@aihot/contracts/time";
-import { ALERTS, EDITION_TIMES } from "@aihot/site";
+import { ALERTS, EDITION_TIMES, EDITIONS_ENABLED } from "@aihot/site";
 import { audit } from "../audit.ts";
 import { sql } from "../db.ts";
 import { agentHandoffs, closeAgentWake, wakeAgent } from "../notify/agent.ts";
@@ -353,7 +353,7 @@ async function alertState(): Promise<AlertState> {
 }
 
 async function dailyReportFindings(now: number, open: AlertState): Promise<Finding[]> {
-  if (!collecting() || !modelsOn()) return [];
+  if (!EDITIONS_ENABLED || !collecting() || !modelsOn()) return [];
   const today = beijingDate(now);
   const [activity] = await sql<{ first_report: string | null; first_attempt: Date | null }[]>`
     SELECT (SELECT min(key) FROM reports WHERE kind = 'daily') AS first_report,

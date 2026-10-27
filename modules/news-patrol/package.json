@@ -1,0 +1,9 @@
+{
+  "name": "@aihot/news-patrol",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./module.ts",
+    "./server": "./server.ts"
+  }
+}

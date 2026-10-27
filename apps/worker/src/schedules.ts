@@ -13,6 +13,7 @@ import { refreshSourceIcons } from "@aihot/backend/sources/icons";
 import { computeHotRanking, snapshotHeat } from "@aihot/backend/events/hot";
 import { linkRelatedStories } from "@aihot/backend/events/consolidate";
 import { composeDueReports } from "@aihot/backend/reports/compose";
+import { EDITIONS_ENABLED } from "@aihot/site";
 import { dailyRetention } from "@aihot/backend/operations/retention";
 import { submitIndexNow } from "@aihot/backend/operations/indexnow";
 import { checkAlerts, sendDigest } from "@aihot/backend/operations/alerts";
@@ -31,8 +32,9 @@ const ENGINE_SCHEDULES: Scheduled[] = [
   { name: "hot.snapshot", cron: "2 * * * *", run: () => snapshotHeat() },
   { name: "stories.links", cron: "12 * * * *", run: linkRelatedStories },
   // Every issue that is due and not written yet, each from its edition time (site/site.ts EDITION_TIMES)
-  // at the next half hour; a missed or failed one at the next run.
-  { name: "reports.compose", cron: "0,30 * * * *", missed: "once", run: () => composeDueReports() },
+  // at the next half hour; a missed or failed one at the next run. Off for sites that publish no
+  // editions (EDITIONS_ENABLED): the schedule and its queue are removed, and no report is missed.
+  { name: "reports.compose", cron: "0,30 * * * *", missed: "once", run: () => composeDueReports(), when: () => EDITIONS_ENABLED },
   // The deletions the privacy notice promises, once their retention periods are over.
   { name: "ops.retention", cron: "30 3 * * *", missed: "once", run: () => dailyRetention() },
   // IndexNow for added, changed and removed discovery URLs, hourly so a new story or report reaches Bing,

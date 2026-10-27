@@ -1,7 +1,16 @@
+# 这是 fork：广西固废情报站（news-worker）
+
+> 本仓库已从 AI 行业示例站改造为**广西五类工业固废新闻检索引擎**（赤泥、冶炼渣、锰渣、绿泥、白泥），
+> 以 worker-only 形态部署在平台（guangxi-solid-waste-map）旁，精选成品经 API 推送给平台。
+> 上游框架的说明保留在下面。本站的文档：
+> [共识方案](docs/CONSENSUS.md) · [平台 API 契约](docs/engine-platform-contract.md) · [部署](docs/deploy-gxsw.md)
+
+---
+
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.png">
-    <img src="docs/assets/banner-light.png" alt="AIHOT：每个行业，都可以有自己的 AIHOT。很多条信源流进中间的精选，再分给法律、人力资源、金融等各个行业" width="100%">
+      <img src="docs/assets/banner-light.png" alt="AIHOT：每个行业，都可以有自己的 AIHOT。很多条信源流进中间的精选，再分给法律、人力资源、金融等各个行业" width="100%">
   </picture>
 </p>
 
