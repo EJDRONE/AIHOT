@@ -45,7 +45,7 @@ export async function dueArticles(): Promise<DueArticle[]> {
     LEFT JOIN stories st ON st.id = p.story_id
     LEFT JOIN patrol_pushes pp ON pp.article_id = p.article_id
     WHERE p.selected AND p.visibility = 'public'
-      AND (pp.id IS NULL OR (pp.status = 'pending' AND pp.attempts < ${MAX_ATTEMPTS}))
+      AND (pp.article_id IS NULL OR (pp.status = 'pending' AND pp.attempts < ${MAX_ATTEMPTS}))
     ORDER BY p.selected_ready_at NULLS FIRST, p.updated_at
     LIMIT ${BATCH}`;
 }
