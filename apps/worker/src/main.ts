@@ -29,6 +29,16 @@ await registerSchedules(boss);
 const heartbeat = startHeartbeat("worker");
 console.log(JSON.stringify({ level: "info", msg: "worker started", pid: process.pid }));
 
+// 运维薄 HTTP（契约 v2）：仅 ENGINE_OPS_TOKEN 配置时拉起；失败不拖垮 worker 主职责。
+if (process.env.ENGINE_OPS_TOKEN) {
+  try {
+    const { startOpsServer } = await import("./ops-server.ts");
+    await startOpsServer();
+  } catch (e) {
+    console.log(JSON.stringify({ level: "error", msg: "ops server failed", error: String(e) }));
+  }
+}
+
 let stopping = false;
 const shutdown = async () => {
   if (stopping) return;

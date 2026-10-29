@@ -1,8 +1,9 @@
-# 引擎 ↔ 平台 API 契约（v1）
+# 引擎 ↔ 平台 API 契约（v2）
 
 > 本契约是 news-worker（AIHOT fork，本仓库）与 guangxi-solid-waste-map 平台
-> FastAPI 之间唯一的集成面。平台侧两个端点由平台仓库的单独任务实现；
-> 字段变更须双方仓库同步修改并更新本文件版本号。
+> FastAPI 之间唯一的集成面。v1 = 数据面两端点（§1/§2）；v2 新增运维面白名单通道（§4，
+> docs/news-engine-ops-plan.md）。铁律措辞：数据面两端点 + 运维面白名单通道，数据库零交叉。
+> 平台侧端点由平台仓库的单独任务实现；字段变更须双方仓库同步修改并更新本文件版本号。
 
 - 引擎侧环境变量：`PLATFORM_API_BASE`（如 `http://<平台主机>:8000`）、
   `PLATFORM_API_TOKEN`。
@@ -126,3 +127,27 @@ Content-Type: application/json
   代理值必须在 `note` 开头注明「项目处理/利用规模，非产生量：」。
 - `line` 标识信源/查询的业务线：penalty=处罚线、eia=环评项目用地线、
   industry=企业动态行业线、patrol=主题级库外巡检。
+
+## 4. 运维通道（v2 新增）
+
+平台 → 引擎方向的内网 HTTP（news-worker 同进程 Fastify，`:8100` 仅容器网内可达，
+不映射宿主）。鉴权 `X-Engine-Ops-Token`（env `ENGINE_OPS_TOKEN`，常数时间比较；
+**未配置则不启动**，此时全部运维动作回退 CLI/SQL）。平台侧经白名单代理
+`/api/v1/engine-ops/*`（admin 角色）访问，代理不接受任意路径拼接——**白名单即契约，
+未登记路径一律 404**。
+
+P0 只读批（第一批放开）：
+
+| 引擎路径 | 上游 | 说明 |
+|---|---|---|
+| `GET /ops/runs` | `admin/runs runsOverview()` | 管线卡件/失败/心跳/队列积压总览 |
+| `GET /ops/models?days=` | `admin/models modelsOverview(days≤90)` | 各能力步模型与质量/耗时/token（默认 7 天） |
+| `GET /ops/patrol/runs?limit=` | `patrol_runs` 表 | 巡检轮次台账（line/窗口/queries/hits/fetched/ingested/skipped/error/起止） |
+| `GET /ops/patrol/pushes?status=&limit=` | `patrol_pushes` 表 | 推送账本（article_id/status=pending|sent|rejected/entities/platform_id/attempts/last_error/pushed_at） |
+
+- 响应统一 JSON；错误语义对齐上游（404 未命中 / 422 参数 / 5xx 引擎侧异常）。
+- 操作类动作（runs 三个 POST、selectbench、sources、模型切换）**未登记即 404**，
+  随 P1/P2 批次升契约版本逐个放开；放开前置与批次见 news-engine-ops-plan.md §8。
+- GET 不记审计；操作类由平台侧代理落 `audit_log`（action 前缀 `engine_ops.`），
+  引擎侧上游函数收固定 actor `platform-proxy`（P1 起接入）。
+- 数据库零交叉、数据面两端点行为均不受本通道影响。

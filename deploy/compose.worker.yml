@@ -56,6 +56,9 @@ services:
   news-worker:
     <<: *backend
     command: ["node", "apps/worker/src/main.ts"]
+    # 运维薄 HTTP（契约 v2）：仅容器内网可达（平台 api 经 gswm_default 打 8100），不映射宿主
+    expose:
+      - "8100"
     # 排空付费调用与备份再退出（沿用上游 worker 的宽限窗口）
     stop_grace_period: 515s
     depends_on:

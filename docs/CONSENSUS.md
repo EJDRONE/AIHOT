@@ -91,6 +91,14 @@
 - 平台审核 UI 对 engine 推送记录的展示适配。
 - 旧 Python discovery 管线的退役决策（跑 2~4 周后评估）。
 
+### #14 运维通道（2026-10-29 增补，契约 v2）
+
+平台侧「新闻优化」工作台（docs/news-engine-ops-plan.md，已拍板）需要引擎运维 UI，
+引擎仍不起前端（#1 维持）：worker 同进程拉起 Fastify 运维薄 HTTP（`:8100`，仅
+`ENGINE_OPS_TOKEN` 配置时启动），路由 = 上游 `admin/*` 函数与 news-patrol 两表的
+透传层，白名单即契约（`engine-platform-contract.md` §4）。#13 的预留就此落地；
+铁律措辞修订为「数据面两端点 + 运维面白名单通道，数据库零交叉」。
+
 ## 6. 安全阀与运行纪律（沿用上游规则）
 
 - 开发与测试期保持关闭：`COLLECT_ENABLED`、`MODEL_CALLS_ENABLED`、
