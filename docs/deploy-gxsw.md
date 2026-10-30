@@ -31,26 +31,27 @@ docker exec -it gswm-db-1 psql -U waste -d waste \
   -c "CREATE ROLE aihot LOGIN PASSWORD '<随机>';" \
   -c "CREATE DATABASE aihot OWNER aihot;"
 
-# 4. 起栈（首次含构建镜像）
-docker compose -f deploy/compose.worker.yml up -d --build
-docker compose -f deploy/compose.worker.yml logs -f news-worker
+# 4. 起栈（首次含构建镜像）；--env-file .env 必带——compose 插值默认只找 deploy/ 下的 .env，
+#    漏了 AIHOT_DATABASE_URL 会静默落回 aihot:aihot 默认密码（env_file 只注入容器运行时环境）
+docker compose --env-file .env -f deploy/compose.worker.yml up -d --build
+docker compose --env-file .env -f deploy/compose.worker.yml logs -f news-worker
 ```
 
 ## 首启自检
 
-1. `docker compose -f deploy/compose.worker.yml logs setup` —— 迁移与信源导入成功退出；
+1. `docker compose --env-file .env -f deploy/compose.worker.yml logs setup` —— 迁移与信源导入成功退出；
    `sources` 表应有 19 条（14 层1信源默认 `enabled=false` 待验证选择器 + 5 条巡检 external 信源）。
 2. worker 日志出现 `worker started`；约一分钟后 `job_runs` 开始有记录：
    `docker exec -it gswm-db-1 psql -U aihot -d aihot -c "SELECT job, state, started_at FROM job_runs ORDER BY id DESC LIMIT 12;"`
 3. 手动触发一轮处罚巡检验证（不等 06:30）：
    ```bash
-   docker compose -f deploy/compose.worker.yml exec news-worker node -e \
+   docker compose --env-file .env -f deploy/compose.worker.yml exec news-worker node -e \
      "import('./modules/news-patrol/backend/patrol.ts').then(m => m.runPatrolLine('penalty')).then(r => console.log(r))"
    ```
    `patrol_runs` 应有一条 `error IS NULL` 的记录，`articles` 里出现 `source_id='patrol-penalty'` 的新条目。
 4. 层1信源验证：逐个打开列表页确认选择器后，把 `industry/sources.json` 里对应项补齐
    `itemSelector/titleSelector/linkSelector` 并 `enabled: true`，然后
-   `docker compose -f deploy/compose.worker.yml exec news-worker node scripts/seed.ts`（只补不覆盖）。
+   `docker compose --env-file .env -f deploy/compose.worker.yml exec news-worker node scripts/seed.ts`（只补不覆盖）。
 5. 测试与冒烟（在能连数据库的环境跑过再上线）：
    ```bash
    npm run typecheck
@@ -59,7 +60,7 @@ docker compose -f deploy/compose.worker.yml logs -f news-worker
 
 ## 日常运维
 
-- 升级：`git pull && docker compose -f deploy/compose.worker.yml up -d --build`（setup 会自动补新迁移）。
+- 升级：`git pull && docker compose --env-file .env -f deploy/compose.worker.yml up -d --build`（setup 会自动补新迁移）。
 - 看巡检与推送对账：
   ```sql
   SELECT line, queries, hits, fetched, ingested, error, started_at FROM patrol_runs ORDER BY id DESC LIMIT 10;

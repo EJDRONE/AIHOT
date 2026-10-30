@@ -10,8 +10,8 @@
 #
 # 用法（在仓库根目录）：
 #   cp .env.example .env && $EDITOR .env        # 填密钥与平台地址
-#   docker compose -f deploy/compose.worker.yml up -d --build
-#   docker compose -f deploy/compose.worker.yml logs -f news-worker
+#   docker compose --env-file .env -f deploy/compose.worker.yml up -d --build
+#   docker compose --env-file .env -f deploy/compose.worker.yml logs -f news-worker
 
 name: gxsw-news
 
