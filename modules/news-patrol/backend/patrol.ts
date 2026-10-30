@@ -79,11 +79,14 @@ export async function runPatrolLine(line: PatrolLine): Promise<PatrolRunResult> 
     const pending = (await queriesFor(line)).slice(0, cfg.maxQueries);
     const seen = new Set<string>();
     const batch: Array<{ title: string; url: string; publishedAt: string | null; raw: Record<string, unknown> }> = [];
+    // 单条查询最多带回 10 个命中，batch 可在两次检查之间越过 MAX_ITEMS（如 49→59），
+    // 而 ingestItems 对 >MAX_ITEMS 的载荷整单拒绝（413）——必须按 MAX_ITEMS 分片发。
     const flush = async () => {
-      if (!batch.length) return;
-      const chunk = batch.splice(0, batch.length);
-      const res = await ingestItems({ sourceId: PATROL_SOURCES[line].id, sourceName: PATROL_SOURCES[line].name, items: chunk });
-      result.ingested += res.created;
+      while (batch.length) {
+        const chunk = batch.splice(0, MAX_ITEMS);
+        const res = await ingestItems({ sourceId: PATROL_SOURCES[line].id, sourceName: PATROL_SOURCES[line].name, items: chunk });
+        result.ingested += res.created;
+      }
     };
 
     for (const { query, company } of pending) {
