@@ -19,7 +19,8 @@ x-app: &app
   build:
     context: ..
     dockerfile: Dockerfile
-  image: gxsw-news-worker
+  # gswm/ 命名空间与平台镜像家族对齐（gswm/backend、gswm/vision-engine、gswm/vision-infer）
+  image: gswm/news-worker
   restart: unless-stopped
 
 x-backend: &backend
