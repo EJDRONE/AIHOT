@@ -97,6 +97,23 @@ test("concurrent indexes have one retriable statement per file, outside a transa
   assert.throws(() => migrationPlan("CREATE INDEX CONCURRENTLY IF NOT EXISTS article_idx ON articles (id); ALTER TABLE articles ADD COLUMN flag text;"));
 });
 
+// Replacing an index drops the old one the same way the new one is built: concurrently (SHARE UPDATE
+// EXCLUSIVE, waits out running queries), one named index, retryable through IF EXISTS, no CASCADE so a
+// constraint still using it stops the migration instead of vanishing with it.
+test("a replaced index is dropped concurrently, alone, retriable, never with its dependents", () => {
+  assert.deepEqual(migrationPlan("DROP INDEX CONCURRENTLY IF EXISTS articles_url_idx;"), { kind: "dropIndex", index: "articles_url_idx" });
+  assert.deepEqual(migrationPlan("-- replaced by the md5 function index\nDROP INDEX CONCURRENTLY IF EXISTS articles_url_idx;"), { kind: "dropIndex", index: "articles_url_idx" });
+  for (const statement of [
+    "DROP INDEX CONCURRENTLY IF EXISTS public.articles_url_idx;", // bare index name, like CREATE INDEX CONCURRENTLY
+    "DROP INDEX articles_url_idx;",
+    "DROP INDEX CONCURRENTLY articles_url_idx;",
+    "DROP INDEX CONCURRENTLY IF EXISTS articles_url_idx CASCADE;",
+    "DROP INDEX CONCURRENTLY IF EXISTS articles_url_idx, articles_md5_idx;",
+    "DROP INDEX CONCURRENTLY IF EXISTS articles_url_idx; DROP INDEX CONCURRENTLY IF EXISTS articles_md5_idx;",
+    "DROP INDEX CONCURRENTLY IF EXISTS articles_url_idx; CREATE INDEX CONCURRENTLY IF NOT EXISTS articles_md5_idx ON articles (md5(url));",
+  ]) assert.throws(() => migrationPlan(statement), statement);
+});
+
 test("comments and string literals cannot disguise dangerous statements or split safe defaults", () => {
   assert.equal(migrationPlan("/* outer /* nested */ comment */ ALTER TABLE articles ADD COLUMN note text DEFAULT 'CHECK; -- it''s text'; -- UPDATE articles\n").kind, "transaction");
   assert.throws(() => migrationPlan("CREATE /* misleading */ INDEX article_idx ON articles (id);"));

@@ -1,6 +1,6 @@
 // A deliberately small online-migration vocabulary. Unknown SQL needs an explicit safety design, not an opt-out.
 export const FIRST_ONLINE_MIGRATION = 55;
-export type MigrationPlan = { kind: "transaction" | "validation" | "statistics" } | { kind: "index"; index: string; table: string };
+export type MigrationPlan = { kind: "transaction" | "validation" | "statistics" } | { kind: "index"; index: string; table: string } | { kind: "dropIndex"; index: string };
 
 // Keep quoted values opaque, including their semicolons and comment markers. SQL bodies are not in
 // the accepted vocabulary; rejecting them also prevents hiding writes in DO or function definitions.
@@ -75,6 +75,15 @@ export function migrationPlan(text: string): MigrationPlan {
     const match = indexStart.exec(sql);
     if (!match) throw new Error("indexes require CREATE INDEX CONCURRENTLY IF NOT EXISTS");
     return { kind: "index", index: match[2], table: match[3].replace(/ \. /g, ".") };
+  }
+  // Replacing an index also means dropping the old one. DROP INDEX CONCURRENTLY shares CREATE INDEX
+  // CONCURRENTLY's lock class (SHARE UPDATE EXCLUSIVE; ordinary reads and writes continue) and, like it,
+  // cannot run inside a transaction. One named index, no CASCADE: a constraint still using it fails the
+  // migration instead of disappearing with it. IF EXISTS is the interrupted retry's safety.
+  if (/^drop index\b/i.test(sql)) {
+    const match = new RegExp(`^drop index concurrently if exists (${IDENT})$`, "i").exec(sql);
+    if (!match) throw new Error("dropping an index online requires DROP INDEX CONCURRENTLY IF EXISTS, one index and no CASCADE");
+    return { kind: "dropIndex", index: match[1] };
   }
   if (new RegExp(`^alter table ${RELATION} validate constraint ${IDENT}$`, "i").test(sql)) return { kind: "validation" };
   // These take SHARE UPDATE EXCLUSIVE, which permits ordinary reads and writes. Keep ANALYZE

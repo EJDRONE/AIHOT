@@ -58,18 +58,21 @@ export async function runMigrations(sql: postgres.Sql, root: string, { backupWai
       try {
         await session`SELECT set_config('lock_timeout', ${plan.kind === "transaction" ? "1s" : "30s"}, false)`;
         await session`SELECT set_config('statement_timeout', ${plan.kind === "transaction" ? "10s" : "30min"}, false)`;
-        if (plan.kind === "index") {
+        if (plan.kind === "index" || plan.kind === "dropIndex") {
           // A concurrent build's internal transactions cannot be wrapped in our transaction. Its
           // retry must not trust IF NOT EXISTS: an interrupted build leaves an invalid index of that name.
+          // A concurrent drop runs the same way; its IF EXISTS is the retry's safety, so no post-check.
           const indexName = plan.index.startsWith('"') ? plan.index.slice(1, -1).replaceAll('""', '"') : plan.index.toLowerCase();
           await session.unsafe(text);
-          const [index] = await session<{ indisvalid: boolean; same_table: boolean }[]>`
-            SELECT i.indisvalid, i.indrelid = to_regclass(${plan.table}) AS same_table
-            FROM pg_index i JOIN pg_class c ON c.oid = i.indexrelid
-            WHERE c.relname = ${indexName}
-              AND c.relnamespace = (SELECT relnamespace FROM pg_class WHERE oid = to_regclass(${plan.table}))`;
-          if (!index?.indisvalid) throw new Error(`index ${plan.index} is missing or invalid; inspect it and DROP INDEX CONCURRENTLY before retrying`);
-          if (!index.same_table) throw new Error(`index ${plan.index} belongs to a different table`);
+          if (plan.kind === "index") {
+            const [index] = await session<{ indisvalid: boolean; same_table: boolean }[]>`
+              SELECT i.indisvalid, i.indrelid = to_regclass(${plan.table}) AS same_table
+              FROM pg_index i JOIN pg_class c ON c.oid = i.indexrelid
+              WHERE c.relname = ${indexName}
+                AND c.relnamespace = (SELECT relnamespace FROM pg_class WHERE oid = to_regclass(${plan.table}))`;
+            if (!index?.indisvalid) throw new Error(`index ${plan.index} is missing or invalid; inspect it and DROP INDEX CONCURRENTLY before retrying`);
+            if (!index.same_table) throw new Error(`index ${plan.index} belongs to a different table`);
+          }
           await session`INSERT INTO schema_migrations (name) VALUES (${name})`;
         } else {
           await session`BEGIN`;
