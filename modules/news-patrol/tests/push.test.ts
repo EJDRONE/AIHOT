@@ -24,8 +24,8 @@ async function insertSelectedArticle(id: string, title: string) {
     INSERT INTO articles (id, source_id, identity_key, url, title, discovered_at, timeline_at, language)
     VALUES (${id}, ${SOURCE}, ${`identity-${id}`}, ${`https://example.gov.cn/${id}.html`}, ${title}, now(), now(), 'zh')`;
   await sql`
-    INSERT INTO publications (article_id, source_id, channel, url, title, summary, selected, eligible, visibility, discovered_at, timeline_at, selected_ready_at)
-    VALUES (${id}, ${SOURCE}, 'news', ${`https://example.gov.cn/${id}.html`}, ${title}, ${`${title}，罚款 42 万元。`}, true, true, 'public', now(), now(), now())`;
+    INSERT INTO publications (article_id, source_id, channel, url, title, summary, selected, eligible, visibility, discovered_at, timeline_at, sort_at, selected_ready_at)
+    VALUES (${id}, ${SOURCE}, 'news', ${`https://example.gov.cn/${id}.html`}, ${title}, ${`${title}，罚款 42 万元。`}, true, true, 'public', now(), now(), now(), now())`;
 }
 
 before(async () => {
@@ -40,13 +40,16 @@ before(async () => {
   await insertSelectedArticle(ARTICLE_OK, "某锰业因渣库渗滤液超标被处罚");
   await insertSelectedArticle(ARTICLE_REJ, "另一条测试处罚");
 
-  // 模型桩：实体抽取返回一个处罚实体
+  // 模型桩：实体抽取返回一个处罚实体 + 一个企业实体。字段按生产实测误型写
+  // （amount/year 是 JSON 数字、city/county/penalty 显式 null）——回归 2026-10-31
+  // 巡检 17 篇精选因这类输出整批被 schema 弃掉、推送全挂的场景。
   model = await stub(() => ({
     id: "stub", model: "stub",
     choices: [{ message: { content: JSON.stringify({ entities: [
-      { type: "penalty", name: `广西测试锰业${T}有限责任公司`, city: "崇左市", county: "", address: "", category: "锰渣",
+      { type: "penalty", name: `广西测试锰业${T}有限责任公司`, city: null, county: null, address: "", category: "锰渣",
         penalty: { decision: "罚款", amount_yuan: 420000, doc_no: "崇环罚〔2026〕12号", date: "2026-10-15", authority: "崇左市生态环境局" },
-        year: "", month: "", amount: "", unit: "", quantity_basis: "", publish_date: "2026-10-16", tags: ["渗滤液"], note: "原文摘录" },
+        year: 2024, month: "", amount: 120, unit: "", quantity_basis: "", publish_date: "2026-10-16", tags: ["渗滤液"], note: "原文摘录" },
+      { type: "company", name: `南丹县测试冶炼厂${T}`, penalty: null, amount: 3, unit: "万吨" },
     ] }) } }],
     usage: { prompt_tokens: 10, completion_tokens: 5, total_tokens: 15 },
   }));
@@ -65,8 +68,10 @@ before(async () => {
 });
 
 after(async () => {
-  await model.close();
-  await platform.close();
+  // before() 中途失败时 model/platform 未赋值，直接 .close() 会抛错跳过 closeDb，
+  // 悬着的连接池让测试进程永不退出、拖死整个 runner（2026-10-31 服务器上 28h 僵尸 npm test 即此）
+  await model?.close();
+  await platform?.close();
   await closeDb();
 });
 
@@ -84,7 +89,7 @@ test("推送：抽取 → 平台 200 记 sent；422 记 rejected 不再重试", 
   assert.equal(rej.status, "rejected");
 
   const payload = platformHits.find((h) => (h.body.article as { id: string }).id === ARTICLE_OK)!.body as {
-    engine: string; article: { source: { tier: string; line: string }; }; entities: Array<{ type: string; penalty?: { amount_yuan: number }; company_ids?: string[] }>;
+    engine: string; article: { source: { tier: string; line: string }; }; entities: Array<{ type: string; amount?: string; year?: string; city?: string; penalty?: { amount_yuan: number }; company_ids?: string[] }>;
   };
   assert.equal(payload.engine, "gxsw-news-engine");
   assert.equal(payload.article.source.tier, "T1");
@@ -92,6 +97,12 @@ test("推送：抽取 → 平台 200 记 sent；422 记 rejected 不再重试", 
   assert.equal(payload.entities[0]!.type, "penalty");
   assert.equal(payload.entities[0]!.penalty!.amount_yuan, 420000);
   assert.deepEqual(payload.entities[0]!.company_ids, [`P-${T}-1`]);
+  // 误型归一：数字 amount/year 落库为字符串，null city 归空串，显式 null penalty 序列化时省略
+  assert.equal(payload.entities[0]!.amount, "120");
+  assert.equal(payload.entities[0]!.year, "2024");
+  assert.equal(payload.entities[0]!.city, "");
+  assert.equal(payload.entities[1]!.amount, "3");
+  assert.ok(!("penalty" in payload.entities[1]!));
 
   // 再推一轮：sent 与 rejected 都不在待推集合，平台不再收到请求
   const hitsBefore = platformHits.length;

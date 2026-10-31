@@ -6,6 +6,7 @@
 import { before, after, test } from "node:test";
 import assert from "node:assert/strict";
 import { closeDb, sql } from "@aihot/backend/db";
+import { stopBoss } from "@aihot/backend/jobs/queue";
 import { tag } from "../../../tests/setup.ts";
 import { runPatrolLine } from "../backend/patrol.ts";
 
@@ -30,6 +31,9 @@ before(async () => {
 
 after(async () => {
   globalThis.fetch = savedFetch;
+  // runPatrolLine → ingestItems 会经 queueProcessing 拉起 pg-boss；不停掉它，轮询会
+  // 钉住测试进程不退出、拖死整个 runner（tests/admin-corrections.test.ts 同款收尾）
+  await stopBoss();
   await closeDb();
 });
 
