@@ -39,7 +39,7 @@ function dayAfter(date: string): string {
 /** 本线路的巡检窗口：上次成功运行的后一天起；首次运行回溯 PATROL_BACKFILL_FROM。 */
 async function windowFor(line: PatrolLine, backfillFrom: string): Promise<{ start: string; end: string }> {
   const [last] = await sql<{ window_end: string }[]>`
-    SELECT window_end FROM patrol_runs WHERE line = ${line} AND error IS NULL AND finished_at IS NOT NULL
+    SELECT window_end::text AS window_end FROM patrol_runs WHERE line = ${line} AND error IS NULL AND finished_at IS NOT NULL
     ORDER BY started_at DESC LIMIT 1`;
   const end = today();
   if (!last) return { start: backfillFrom, end };

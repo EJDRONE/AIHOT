@@ -53,10 +53,10 @@ test("库外主题查询覆盖五类", () => {
   for (const term of ["赤泥", "锰渣", "滤泥", "白泥", "钢渣"]) assert.ok(joined.includes(term), term);
 });
 
-test("校准信源字典：19 站、regional 不带 site:、其余限定域名", () => {
-  assert.equal(CALIBRATED_SOURCES.length, 19);
+test("校准信源字典：20 站、regional 不带 site:、其余限定域名", () => {
+  assert.equal(CALIBRATED_SOURCES.length, 20);
   const queries = buildSourceQueries();
-  assert.equal(queries.length, 19);
+  assert.equal(queries.length, 20);
   const regional = queries.filter((q) => !q.includes("site:"));
   assert.equal(regional.length, 2);
   assert.ok(queries.some((q) => q.includes("site:sthjt.gxzf.gov.cn")));
