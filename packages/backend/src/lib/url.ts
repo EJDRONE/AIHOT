@@ -2,6 +2,8 @@
 import { lookup } from "node:dns/promises";
 import net from "node:net";
 
+import { sha256 } from "./ids.ts";
+
 const TRACKING_PARAMS = /^(utm_[a-z]+|spm|from|ref|ref_src|ref_url|source|share_source|share_token|fbclid|gclid|igshid|mc_cid|mc_eid|_hsenc|_hsmi|scene|chksm|sessionid|srcid|clicktime|enterid|mkt_tok)$/i;
 
 /** Canonical form used for identity: lower-case host, no fragment, no tracking params, no trailing slash. */
@@ -52,6 +54,11 @@ export function tweetIdFromUrl(url: string): string | null {
 /**
  * Identity of material at an address. `keepFragment` is for sources whose entries are sections of one
  * page (release notes: overview#september-24-2026): without it every section is the same article.
+ *
+ * Pathological URLs (multi-kilobyte query strings) exceed PostgreSQL's btree row limit for the
+ * unique index on articles.identity_key (2704 bytes per production patrol evidence). Those get a
+ * fixed-length `urlh:<sha256>` identity instead: injective, so two distinct long URLs cannot
+ * collide the way truncation would; re-discovery of the same URL converges on the same hash.
  */
 export function identityKeyForUrl(url: string, opts: { keepFragment?: boolean } = {}): string | null {
   const tweet = tweetIdFromUrl(url);
@@ -59,7 +66,9 @@ export function identityKeyForUrl(url: string, opts: { keepFragment?: boolean } 
   const normalized = normalizeUrl(url);
   if (!normalized) return null;
   const fragment = opts.keepFragment ? new URL(url.trim()).hash : "";
-  return `url:${normalized}${fragment.length > 1 ? fragment : ""}`;
+  const body = `${normalized}${fragment.length > 1 ? fragment : ""}`;
+  if (Buffer.byteLength(body, "utf8") <= 2000) return `url:${body}`;
+  return `urlh:${sha256(body)}`;
 }
 
 function ipv4Blocked(o: [number, number, number, number]): boolean {

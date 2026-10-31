@@ -47,3 +47,21 @@ test("invalid and non-HTTP URLs cannot acquire a tweet identity", () => {
     assert.equal(identityKeyForUrl(url), null, url);
   }
 });
+
+// Production patrol hit a ~3400-byte URL whose `url:` identity blew past PostgreSQL's btree row
+// limit for articles_identity_key_key (2704 bytes) and failed the whole ingest batch.
+test("pathologically long URLs become fixed-length hash identities", () => {
+  const long = `https://example.org/search?${"q=" + "a".repeat(3000)}`;
+  const key = identityKeyForUrl(long)!;
+  assert.match(key, /^urlh:[0-9a-f]{64}$/);
+  assert.ok(Buffer.byteLength(key, "utf8") < 100, "hash identity must stay tiny");
+  // Same URL converges, different long URLs stay distinct (injective, unlike truncation).
+  assert.equal(identityKeyForUrl(long), key);
+  assert.notEqual(identityKeyForUrl(`https://example.org/search?${"q=" + "b".repeat(3000)}`), key);
+  // Regular and just-under-cap URLs keep the readable identity (multi-byte counted as bytes).
+  assert.equal(identityKeyForUrl("https://example.org/post/1"), "url:https://example.org/post/1");
+  const edge = `https://example.org/p?${"a".repeat(1900)}`;
+  assert.ok(identityKeyForUrl(edge)!.startsWith("url:"));
+  const wide = `https://example.org/p?${"广".repeat(700)}`; // 2100 bytes over 700 chars
+  assert.ok(identityKeyForUrl(wide)!.startsWith("urlh:"));
+});
